@@ -13,6 +13,7 @@ Shoedocs respects standard environment variables for configuration. This guide c
 The base URL for the Shoehorn API.
 
 **Example:**
+
 ```bash
 SHOEHORN_API_URL=https://idp.company.com/api/v1
 ```
@@ -29,6 +30,7 @@ SHOEHORN_API_URL=https://idp.company.com/api/v1
 GitHub Personal Access Token for API access.
 
 **Example:**
+
 ```bash
 GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 ```
@@ -50,6 +52,7 @@ GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 API key for Typesense search engine.
 
 **Example:**
+
 ```bash
 TYPESENSE_API_KEY=xyz123abc456def789
 ```
@@ -66,6 +69,7 @@ TYPESENSE_API_KEY=xyz123abc456def789
 Connection string for Redis/Valkey cache.
 
 **Example:**
+
 ```bash
 REDIS_URL=redis://localhost:6379
 ```
@@ -73,6 +77,7 @@ REDIS_URL=redis://localhost:6379
 **Default:** `redis://localhost:6379`
 
 **Format:**
+
 ```
 redis://[user:password@]host[:port][/database]
 redis://localhost:6379/0
@@ -84,6 +89,7 @@ rediss://user:pass@secure-redis.com:6380/1  # SSL
 Controls logging verbosity.
 
 **Example:**
+
 ```bash
 LOG_LEVEL=debug
 ```
@@ -99,6 +105,7 @@ LOG_LEVEL=debug
 HTTP server port.
 
 **Example:**
+
 ```bash
 PORT=8080
 ```
