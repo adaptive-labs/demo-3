@@ -1,7 +1,7 @@
 schemaVersion: 1
 
 service:
-  id: the-boats
+  id: shoehorn-platform
   name: Shoehorn
   description: A test service for Shoedocs documentation.
   type: service
@@ -18,6 +18,26 @@ tags:
   - techdocs
 
 links:
-  - name: Repository
-    url: https://github.com/adaptive-labs/test-shoedocs-nav
-    icon: github
+  - name: Website
+    url: https://shoehorn.dev
+    icon: Globe
+  - name:: Demo site
+    url: https://demo.shoedocs.dev
+    icon: Book
+  - name: Organization
+    url: https://github.com/shoehorn-dev
+    icon: Github
+
+relations:
+  - type: consumes_api
+    target: service:shoehorn-api
+    notes: Shoehorn API for documentation management
+  - type: consumes_api
+    target: service:shoehorn-search
+    notes: User authentication and session management
+  - type: consumes_api
+    target: service:ml-recommendation-service
+    notes: Personalized content recommendations
+  - type: deployed_to
+    target: service:cloudfront-cdn
+    notes: Static assets via CDN
