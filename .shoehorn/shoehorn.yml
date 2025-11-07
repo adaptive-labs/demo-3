@@ -4,7 +4,7 @@ service:
   id: shoehorn-platform
   name: Shoehorn
   type: service
-description: A test service for Shoedocs documentation.
+description: The Shoehorn platform
 
 owner:
   - type: team
@@ -14,14 +14,13 @@ lifecycle: production
 
 tags:
   - documentation
-  - test
-  - techdocs
+  - platform
 
 links:
   - name: Website
     url: https://shoehorn.dev
     icon: Link
-  - name:: Demo site
+  - name: Demo site
     url: https://demo.shoedocs.dev
     icon: Link
   - name: Organization
