@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: org-catalog-test
+  title: Organization Catalog
+  description: Central catalog discovery locations
+spec:
+  type: url
+  targets:
+    - backstage/admin-dashboard-catalog-info.yaml
+    - backstage/go-microservice-template.yaml
+    - backstage/platform-team-catalog-info.yaml
+    - backstage/postgres-db-catalog-info.yaml
+    - backstage/user-api-catalog-info.yaml
+    - backstage/user-management-system-catalog-info.yaml
+    - backstage/user-service-catalog-info.yaml
