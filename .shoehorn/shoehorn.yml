@@ -20,10 +20,10 @@ tags:
 links:
   - name: Website
     url: https://shoehorn.dev
-    icon: Globe
+    icon: Link
   - name:: Demo site
     url: https://demo.shoedocs.dev
-    icon: Book
+    icon: Link
   - name: Organization
     url: https://github.com/shoehorn-dev
     icon: Github
