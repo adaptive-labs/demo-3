@@ -3,8 +3,8 @@ schemaVersion: 1
 service:
   id: shoehorn-platform
   name: Shoehorn
-  description: A test service for Shoedocs documentation.
   type: service
+description: A test service for Shoedocs documentation.
 
 owner:
   - type: team
