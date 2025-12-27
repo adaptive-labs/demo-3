@@ -19,4 +19,5 @@ spec:
   profile:
     displayName: Platform Team
     email: platform-team@example.com
-  children: []
+  children:
+    - admin@shoehorn.dev
