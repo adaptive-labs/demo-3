@@ -40,3 +40,6 @@ relations:
   - type: deployed_to
     target: service:cloudfront-cdn
     notes: Static assets via CDN
+
+integrations:
+  changelog_path: CHANGELOG.md
