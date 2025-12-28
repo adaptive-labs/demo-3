@@ -2,7 +2,7 @@ schemaVersion: 1
 
 service:
   id: shoehorn-platform
-  name: Shoehorn
+  name: Shoehorn Platform
   type: service
 description: The Shoehorn platform
 
@@ -42,4 +42,6 @@ relations:
     notes: Static assets via CDN
 
 integrations:
-  changelog_path: CHANGELOG.md
+  changelog: 
+    path: CHANGELOG.md
+
