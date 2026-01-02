@@ -1,0 +1,49 @@
+schemaVersion: 1
+
+service:
+  id: platform-team
+  name: Platform Team
+  type: team
+
+description: Platform engineering team responsible for internal developer tools and infrastructure
+
+owner:
+  - type: team
+    id: engineering-leadership
+
+lifecycle: production
+
+tags:
+  - platform
+  - infrastructure
+  - developer-experience
+  - internal-tools
+
+links:
+  - name: Team Wiki
+    url: https://wiki.example.com/platform-team
+    icon: Wiki
+  - name: GitHub Team
+    url: https://github.com/orgs/your-org/teams/platform-team
+    icon: GitHub
+  - name: Slack Channel
+    url: https://your-org.slack.com/archives/C123456
+    icon: Slack
+  - name: Team Dashboard
+    url: https://grafana.example.com/d/platform-team
+    icon: Dashboard
+
+relations:
+  - type: part_of
+    target: system:engineering
+  - type: uses
+    target: service:shoehorn
+
+extras:
+  - type: slackchannel
+    target: "#platform-team"
+
+annotations:
+  email: platform-team@example.com
+  oncall: https://pagerduty.com/teams/platform-team
+  team-lead: alice@example.com
