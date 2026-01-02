@@ -1,11 +1,11 @@
 schemaVersion: 1
 
 service:
-  id: platform-team
-  name: Shoehorn Platform Team
+  id: shoehorn-team
+  name: Shoehorn Team
   type: team
 
-description: Shoehorn Platform Team
+description: Shoehorn team
 
 owner:
   - type: team
