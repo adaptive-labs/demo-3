@@ -5,7 +5,7 @@ service:
   name: Platform Team
   type: team
 
-description: Platform engineering team responsible for internal developer tools and infrastructure
+description: Shoehorn engineering team
 
 owner:
   - type: team
