@@ -2,7 +2,7 @@ schemaVersion: 1
 
 service:
   id: platform-team
-  name: Platform Team
+  name: Shoehorn Platform Team
   type: team
 
 description: Shoehorn engineering team
