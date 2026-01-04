@@ -42,6 +42,16 @@ relations:
     notes: Static assets via CDN
 
 integrations:
-  changelog: 
+  changelog:
     path: CHANGELOG.md
 
+interfaces:
+  http:
+    # Option 1: URL to OpenAPI spec (public Petstore API for testing)
+    openapi: https://petstore3.swagger.io/api/v3/openapi.json
+
+    # Option 2: Relative path to OpenAPI spec in repository (uncomment to test)
+    # openapi: ./openapi.yaml
+
+    # Option 3: Another public API example
+    # openapi: https://api.github.com/openapi.json
