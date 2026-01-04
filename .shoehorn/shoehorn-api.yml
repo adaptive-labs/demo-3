@@ -23,6 +23,8 @@ relations:
 
 interfaces:
   http:
-    # openapi: ./openapi.yaml
+    # Option 1: URL to OpenAPI spec (public Petstore API for testing)
+    openapi: https://petstore3.swagger.io/api/v3/openapi.json
 
-    openapi: https://api.github.com/openapi.json
+    # Option 2: Relative path to OpenAPI spec in repository (uncomment to test)
+    # openapi: ./openapi.yaml
