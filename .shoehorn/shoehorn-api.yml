@@ -16,7 +16,7 @@ owner:
   - type: designer
     id: anders-b
 
-lifecycle: production
+lifecycle: development
 
 links:
   - name: Website
