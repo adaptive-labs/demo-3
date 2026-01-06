@@ -11,11 +11,11 @@ owner:
   - type: team
     id: platform-team
   - type: stakeholder
-    id: platform-team
-  - type: owner
     id: shoehorn-dev
+  - type: owner
+    id: peter akimoto
   - type: designer
-    id: anders-b
+    id: friendly software inc
 
 lifecycle: development
 
@@ -29,18 +29,18 @@ links:
 
 integrations:
   licenses:
-    - title: MSSQL Server Enterprise
-      vendor: Microsoft
+    - title: PostgreSQL Managed
+      vendor: upcloud
       purchased: "2025-01-01"
       expires: "2025-12-31"
       seats: 10
-      cost: "$5000/year"
+      cost: "$500/year"
       contract: ENT-12345
       notes: Production database license
-    - title: Datadog Pro
-      vendor: Datadog
+    - title: Grafana Enterprise
+      vendor: Grafana
       expires: "2026-06-30"
-      cost: "$2400/year"
+      cost: "$240/year"
   runbooks:
     - title: Database Recovery
       path: runbooks/db-recovery.md
