@@ -9,8 +9,22 @@ description: The Shoehorn platform APIs
 owner:
   - type: team
     id: platform-team
+  - type: stakeholder
+    id: platform-team
+  - type: owner
+    id: shoehorn-dev
+  - type: designer
+    id: anders-b
 
 lifecycle: production
+
+links:
+  - name: Website
+    url: https://shoehorn.dev
+    icon: Link
+  - name: Organization
+    url: https://github.com/shoehorn-dev
+    icon: Github
 
 tags:
   - documentation
@@ -19,7 +33,7 @@ tags:
 relations:
   - type: consumes_api
     target: service:shoehorn-search
-    notes: User authentication and session management
+    notes: Search Engine
 
 interfaces:
   http:
