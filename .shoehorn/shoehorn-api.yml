@@ -4,6 +4,7 @@ service:
   id: shoehorn-api
   name: Shoehorn Api
   type: api
+  tier: Platinum
 description: The Shoehorn platform APIs
 
 owner:
