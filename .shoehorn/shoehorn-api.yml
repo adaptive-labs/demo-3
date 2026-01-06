@@ -4,6 +4,7 @@ service:
   id: shoehorn-api
   name: Shoehorn Api
   type: api
+  tier: bronze
 description: The Shoehorn platform APIs
 
 owner:
@@ -25,6 +26,28 @@ links:
   - name: Organization
     url: https://github.com/shoehorn-dev
     icon: Github
+
+integrations:
+  licenses:
+    - title: MSSQL Server Enterprise
+      vendor: Microsoft
+      purchased: "2025-01-01"
+      expires: "2025-12-31"
+      seats: 10
+      cost: "$5000/year"
+      contract: ENT-12345
+      notes: Production database license
+    - title: Datadog Pro
+      vendor: Datadog
+      expires: "2026-06-30"
+      cost: "$2400/year"
+  runbooks:
+    - title: Database Recovery
+      path: runbooks/db-recovery.md
+      severity: critical
+    - title: Cache Invalidation
+      path: runbooks/cache-clear.md
+      severity: low
 
 tags:
   - documentation
