@@ -8,8 +8,6 @@ service:
 description: Shoehorn Search Engine
 
 owner:
-  - type: team
-    id: platform-team
   - type: stakeholder
     id: shoehorn-dev
 
