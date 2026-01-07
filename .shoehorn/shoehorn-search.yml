@@ -1,0 +1,25 @@
+schemaVersion: 1
+
+service:
+  id: shoehorn-search
+  name: Shoehorn Search
+  type: service
+  tier: Platinum
+description: Shoehorn Search Engine
+
+owner:
+  - type: team
+    id: platform-team
+  - type: stakeholder
+    id: shoehorn-dev
+
+lifecycle: production
+
+tags:
+  - documentation
+  - platform
+  - search
+  - shoehorn
+  - tags
+  - golang
+  - grpc
