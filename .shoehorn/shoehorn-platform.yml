@@ -1,0 +1,84 @@
+schemaVersion: 1
+
+service:
+  id: shoehorn-platform
+  name: Shoehorn Platform
+  type: service
+description: The Shoehorn platform
+
+owner:
+  - type: team
+    id: platform-team
+  - type: stakeholder
+    id: shoehorn-dev
+  - type: owner
+    id: peter akimoto
+  - type: designer
+    id: friendly software inc
+
+lifecycle: production
+
+tags:
+  - documentation
+  - platform
+
+docs:
+  - readme:
+    path: README.md
+
+links:
+  - name: Website
+    url: https://shoehorn.dev
+    icon: Link
+  - name: Demo site
+    url: https://demo.shoedocs.dev
+    icon: Link
+  - name: Organization
+    url: https://github.com/shoehorn-dev
+    icon: Github
+
+integrations:
+  licenses:
+    - title: PostgreSQL Managed
+      vendor: upcloud
+      purchased: "2025-01-01"
+      expires: "2025-12-31"
+      seats: 10
+      cost: "$500/year"
+      contract: ENT-12345
+      notes: Production database license
+    - title: Grafana Enterprise
+      vendor: Grafana
+      expires: "2026-06-30"
+      cost: "$240/year"
+  runbooks:
+    - title: Database Recovery
+      path: runbooks/db-recovery.md
+      severity: critical
+    - title: Cache Invalidation
+      path: runbooks/cache-clear.md
+      severity: low
+  changelog:
+    path: CHANGELOG.md
+
+relations:
+  - type: consumes_api
+    target: service:shoehorn-api
+    notes: Shoehorn API for documentation management
+  - type: consumes_api
+    target: service:shoehorn-search
+    notes: User authentication and session management
+  - type: consumes_api
+    target: service:ml-recommendation-service
+    notes: Personalized content recommendations
+  - type: deployed_to
+    target: service:cloudfront-cdn
+    notes: Static assets via CDN
+
+interfaces:
+  http:
+    # Option 1: URL to OpenAPI spec (public Petstore API for testing)
+    openapi: https://petstore3.swagger.io/api/v3/openapi.json
+
+    # Option 2: Relative path to OpenAPI spec in repository (uncomment to test)
+    # openapi: ./openapi.yaml
