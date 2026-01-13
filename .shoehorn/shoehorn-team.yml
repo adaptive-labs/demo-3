@@ -1,24 +1,22 @@
 schemaVersion: 1
-
 service:
   id: shoehorn-team
   name: Shoehorn Team
   type: team
-
+  members:
+    - user1@test.com
+    - user2@test.com
+    - user3@test.com
 description: Shoehorn team
-
 owner:
   - type: team
     id: engineering-leadership
-
 lifecycle: production
-
 tags:
   - platform
   - infrastructure
   - developer-experience
   - internal-tools
-
 links:
   - name: Team Wiki
     url: https://wiki.example.com/platform-team
@@ -32,17 +30,14 @@ links:
   - name: Team Dashboard
     url: https://grafana.example.com/d/platform-team
     icon: Dashboard
-
 relations:
   - type: part_of
     target: system:engineering
   - type: uses
     target: service:shoehorn
-
 extras:
   - type: slackchannel
     target: "#platform-team"
-
 annotations:
   email: platform-team@example.com
   oncall: https://pagerduty.com/teams/platform-team
