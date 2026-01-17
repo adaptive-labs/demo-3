@@ -1,0 +1,5 @@
+site_name: testing 
+
+nav:
+- Introduction: 'README.md'
+- 'Issue Tracker': 'https://example.com/'
