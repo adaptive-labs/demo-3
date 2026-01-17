@@ -8,7 +8,7 @@ service:
 description: The Shoehorn platform APIs
 
 docs:
-  - readme:
+  readme:
     path: README.md
 
 owner:

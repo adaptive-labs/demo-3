@@ -23,7 +23,7 @@ tags:
   - platform
 
 docs:
-  - readme:
+  readme:
     path: README.md
 
 links:
