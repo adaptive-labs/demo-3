@@ -1,5 +1,5 @@
 site_name: testing 
 
 nav:
-- Introduction: 'README.md'
-- 'Issue Tracker': 'https://example.com/'
+  - Introduction: 'README.md'
+  - 'Issue Tracker': 'https://example.com/'
