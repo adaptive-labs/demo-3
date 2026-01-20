@@ -3,4 +3,4 @@ site_name: Shoehorn Docs
 nav:
   - Introduction: 'README.md'
   - Changlog: 'CHANGELOG.md'
-  - Diagrams: 'Diagrams.md'
+  - Diagrams: 'diagrams.md'
