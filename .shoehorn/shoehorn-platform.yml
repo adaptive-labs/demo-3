@@ -71,3 +71,5 @@ relations:
     target: service:ml-recommendation-service
   - type: deployed_to
     target: service:cloudfront-cdn
+  - type: depends_on
+    target: upcloud:database:0933a1f9-28cd-4070-8aa9-027b10213e89
