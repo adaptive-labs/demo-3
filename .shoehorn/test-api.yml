@@ -1,11 +1,11 @@
 schemaVersion: 1
 
 service:
-  id: shoehorn-api
-  name: Shoehorn Api
+  id: test-api
+  name: Test Api
   type: api
   tier: Platinum
-description: The Shoehorn platform APIs
+description: My first API
 
 docs:
   readme:
@@ -15,11 +15,9 @@ owner:
   - type: team
     id: platform-team
   - type: stakeholder
-    id: shoehorn-dev
-  - type: owner
-    id: peter akimoto
+    id: sales
   - type: designer
-    id: friendly software inc
+    id: friendly-designs
 
 lifecycle: development
 
@@ -27,9 +25,6 @@ links:
   - name: Website
     url: https://shoehorn.dev
     icon: Link
-  - name: Organization
-    url: https://github.com/shoehorn-dev
-    icon: Github
 
 integrations:
   licenses:

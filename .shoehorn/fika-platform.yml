@@ -1,21 +1,19 @@
 schemaVersion: 1
 
 service:
-  id: shoehorn-platform
-  name: Shoehorn Platform
+  id: fika-platform
+  name: Fika Platform
   type: service
   tier: Platinum
-description: The Shoehorn platform
+description: The Fika platform
 
 owner:
   - type: team
     id: platform-team
   - type: stakeholder
-    id: shoehorn-dev
-  - type: owner
-    id: peter akimoto
+    id: kodfika
   - type: designer
-    id: friendly software inc
+    id: kodfika
 
 lifecycle: production
 
@@ -29,14 +27,8 @@ docs:
 
 links:
   - name: Website
-    url: https://shoehorn.dev
+    url: https://kodfika.se/
     icon: Link
-  - name: Demo site
-    url: https://demo.shoedocs.dev
-    icon: Link
-  - name: Organization
-    url: https://github.com/shoehorn-dev
-    icon: Github
 
 integrations:
   licenses:
@@ -65,8 +57,6 @@ integrations:
 relations:
   - type: consumes_api
     target: service:shoehorn-api
-  - type: consumes_api
-    target: service:shoehorn-search
   - type: consumes_api
     target: service:ml-recommendation-service
   - type: deployed_to

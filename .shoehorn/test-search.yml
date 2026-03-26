@@ -1,11 +1,11 @@
 schemaVersion: 1
 
 service:
-  id: shoehorn-search
-  name: Shoehorn Search
+  id: test-search
+  name: Test Search
   type: service
   tier: Platinum
-description: Shoehorn Search Engine
+description: Test Search Engine
 
 owner:
   - type: stakeholder
