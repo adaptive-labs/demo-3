@@ -1,7 +1,6 @@
 site_name: Shoehorn Docs 
 
 nav:
-  - Introduction: 'README.md'
   - Test: 'docs/cli/deploy.md'
-  - Changlog: 'CHANGELOG.md'
-  - Diagrams: 'diagrams.md'
+  - Changelog: 'docs/CHANGELOG.md'
+  - Diagrams: 'docs/diagrams.md'
