@@ -1,3 +1,10 @@
+---
+category: onboarding
+title: Getting Started with Payment Service
+description: Set up a local payment service dev environment in 10 minutes
+related_entities: [payment-service, billing-service]
+---
+
 # Welcome
 Warmest welcome to the Shoehorn world. The friendly helper, Buddy, you've met at the login page. Buddy is here to help!
 
