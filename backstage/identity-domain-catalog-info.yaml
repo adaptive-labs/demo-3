@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: identity
+  title: Identity
+  description: Everything related to "who is this person?" — auth, profiles, sessions.
+spec:
+  owner: platform-team

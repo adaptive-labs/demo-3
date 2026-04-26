@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: login-portal
+  title: Login Portal
+  description: Public sign-in / sign-up surface for the Identity Platform.
+  tags:
+    - frontend
+    - identity
+spec:
+  type: website
+  lifecycle: production
+  owner: platform-team
+  system: identity-platform
+  consumesApis:
+    - api:auth-api

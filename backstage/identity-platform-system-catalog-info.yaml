@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: identity-platform
+  title: Identity Platform
+  description: >-
+    Logical grouping for everything that knows "who is this person?". Owns
+    authentication, user profiles, sessions, and the OIDC surface backing
+    every customer-facing product.
+  tags:
+    - authentication
+    - identity
+    - platform
+  links:
+    - url: https://wiki.example.com/systems/identity-platform
+      title: System Documentation
+      icon: docs
+    - url: https://wiki.example.com/runbooks/identity-outage
+      title: Identity Outage Runbook
+      icon: docs
+spec:
+  owner: platform-team
+  domain: identity
