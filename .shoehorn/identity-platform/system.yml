@@ -1,0 +1,38 @@
+schemaVersion: 1
+
+service:
+  id: identity-platform
+  name: Identity Platform
+  type: system
+  tier: platinum
+
+description: >-
+  Logical grouping for everything that knows "who is this person?". Owns
+  authentication, user profiles, sessions, and the OIDC surface backing every
+  customer-facing product.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+tags:
+  - authentication
+  - identity
+  - platform
+
+links:
+  - name: System Documentation
+    url: https://wiki.example.com/systems/identity-platform
+    icon: Link
+  - name: Architecture Decision Records
+    url: https://github.com/adaptive-labs/demo-3/tree/main/docs/adr/identity
+    icon: GitHub
+  - name: Identity Outage Runbook
+    url: https://wiki.example.com/runbooks/identity-outage
+    icon: Link
+
+relations:
+  - type: part_of
+    target: domain:identity

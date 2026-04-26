@@ -1,0 +1,26 @@
+schemaVersion: 1
+
+service:
+  id: user-api
+  name: user-api
+  type: api
+  tier: gold
+
+description: REST v2 user CRUD and preference management. Public.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+interfaces:
+  http:
+    baseUrl: https://api.example.com/users
+    version: v2
+    auth:
+      type: oauth2
+
+relations:
+  - type: part_of
+    target: system:identity-platform

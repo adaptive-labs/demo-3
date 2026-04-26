@@ -1,0 +1,21 @@
+schemaVersion: 1
+
+service:
+  id: login-portal
+  name: login-portal
+  type: frontend
+  tier: gold
+
+description: Public sign-in / sign-up surface.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform
+  - type: consumes_api
+    target: service:auth-api

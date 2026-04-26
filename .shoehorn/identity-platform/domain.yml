@@ -1,0 +1,14 @@
+schemaVersion: 1
+
+service:
+  id: identity
+  name: Identity
+  type: domain
+
+description: Everything related to "who is this person?" — auth, profiles, sessions.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production

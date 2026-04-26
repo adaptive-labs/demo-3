@@ -1,0 +1,25 @@
+schemaVersion: 1
+
+service:
+  id: user-profile-service
+  name: user-profile-service
+  type: service
+  tier: gold
+
+description: Profile CRUD, preferences, and avatar upload pipeline.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform
+  - type: depends_on
+    target: database:pg-users
+  - type: depends_on
+    target: resource:avatar-bucket
+  - type: provides_api
+    target: service:user-api

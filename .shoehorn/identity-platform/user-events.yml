@@ -1,0 +1,19 @@
+schemaVersion: 1
+
+service:
+  id: user-events
+  name: user-events
+  type: resource
+  tier: silver
+
+description: Redpanda audit topic — every identity mutation lands here.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform

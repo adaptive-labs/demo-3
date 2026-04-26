@@ -1,0 +1,21 @@
+schemaVersion: 1
+
+service:
+  id: session-service
+  name: session-service
+  type: service
+  tier: gold
+
+description: Active session tracking and revocation.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform
+  - type: depends_on
+    target: resource:redis-sessions

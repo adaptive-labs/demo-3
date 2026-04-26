@@ -1,0 +1,29 @@
+schemaVersion: 1
+
+service:
+  id: auth-service
+  name: auth-service
+  type: service
+  tier: gold
+
+description: OAuth2/OIDC token issuer backing every customer-facing product.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+tags:
+  - identity
+  - oidc
+
+relations:
+  - type: part_of
+    target: system:identity-platform
+  - type: depends_on
+    target: database:pg-users
+  - type: depends_on
+    target: resource:redis-sessions
+  - type: provides_api
+    target: service:auth-api

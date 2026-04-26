@@ -1,0 +1,21 @@
+schemaVersion: 1
+
+service:
+  id: profile-app
+  name: profile-app
+  type: frontend
+  tier: silver
+
+description: Self-serve profile, MFA, and password settings.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform
+  - type: consumes_api
+    target: service:user-api

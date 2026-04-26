@@ -1,0 +1,21 @@
+schemaVersion: 1
+
+service:
+  id: role-mapper
+  name: role-mapper
+  type: service
+  tier: bronze
+
+description: Maps external IdP claims into internal Cerbos roles.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: experimental
+
+relations:
+  - type: part_of
+    target: system:identity-platform
+  - type: depends_on
+    target: database:pg-users

@@ -1,0 +1,26 @@
+schemaVersion: 1
+
+service:
+  id: auth-api
+  name: auth-api
+  type: api
+  tier: gold
+
+description: OIDC discovery, token, and introspection endpoints. Public.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+interfaces:
+  http:
+    baseUrl: https://api.example.com/auth
+    version: v1
+    auth:
+      type: oauth2
+
+relations:
+  - type: part_of
+    target: system:identity-platform

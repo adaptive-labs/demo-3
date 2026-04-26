@@ -1,0 +1,19 @@
+schemaVersion: 1
+
+service:
+  id: avatar-bucket
+  name: avatar-bucket
+  type: resource
+  tier: bronze
+
+description: Object storage bucket for profile images.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform

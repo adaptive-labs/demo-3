@@ -1,0 +1,19 @@
+schemaVersion: 1
+
+service:
+  id: pg-users
+  name: pg-users
+  type: database
+  tier: platinum
+
+description: Postgres primary store for users, profiles, and credentials.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform

@@ -1,0 +1,26 @@
+schemaVersion: 1
+
+service:
+  id: internal-admin-api
+  name: internal-admin-api
+  type: api
+  tier: silver
+
+description: gRPC admin surface for support tooling. Internal only.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+interfaces:
+  grpc:
+    package: identity.admin.v1
+    services:
+      - UserAdminService
+      - SessionAdminService
+
+relations:
+  - type: part_of
+    target: system:identity-platform

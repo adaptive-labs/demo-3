@@ -1,0 +1,19 @@
+schemaVersion: 1
+
+service:
+  id: redis-sessions
+  name: redis-sessions
+  type: resource
+  tier: gold
+
+description: Valkey session cache and rate-limit counters.
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+relations:
+  - type: part_of
+    target: system:identity-platform
